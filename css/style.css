@@ -1,0 +1,39 @@
+/*
+  Theme Name: Vehicle Parking System
+  Author: mdashiqueabdullah@gmail.com
+  Support: mdashiqueabdullah@gmail.com
+  Description: Vehicle Parking System
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. Left Side 
+4. Right Side
+*/
+
+
+
+/* 1. Theme default css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,700&display=swap');
+ 
+ ::root{
+    --font-Montserrat:'Montserrat', sans-serif;
+    --font-Poppins: 'Poppins', sans-serif;
+    --font-Source: 'Source Sans Pro', sans-serif;
+    --main-text-color:#0F97FF;
+    --second-text-color:#0BDADA;
+ }
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+

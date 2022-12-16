@@ -29,32 +29,15 @@
  }
 
 
-.header-top{
-  background-color: black;
-  padding: 10px 20px;
-}
 
-.header-top h2{
-  color: white;
-  font-size: 25px;
-  font-family: var(--font-Montserrat);
-}
-
-.header-top h2 .vehicle{
-  color: var(--main-text-color);
-}
-
-.header-top i{
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: var(--main-text-color);
-}
 
 .main {}
 .main .left{
   max-width: 250px;
-  overflow: hidden;
+  height: 200vh;
+  position: fixed;
+  border-right: 1px solid #ddd;
+  padding-bottom: 50px;
 }
 
 .main .left .user-img{
@@ -72,7 +55,7 @@
 
 .main .right{
   background-color: gray;
-  height: 100vh;
+  height: auto;
 }
 
 .main .left .user-name h3{
@@ -108,7 +91,9 @@
   border: 1px solid #ddd;
   height: 45px;
 }
+.main .left .menu ul{
 
+}
 .main .left .menu ul li a{
   padding: 15px 10px;
   color: #444;
@@ -123,3 +108,155 @@
   color: white!important;
 }
 
+.right {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+}
+
+.header-top{
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;
+  width: 82%;
+}
+
+.header-top h2{
+  color: white;
+  font-size: 25px;
+  font-family: var(--font-Montserrat);
+}
+
+.header-top label i{
+  background-color: blue;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.header-top h2 .vehicle{
+  color: var(--main-text-color);
+}
+
+input#leftMenu , input#userInfo, input#language, input#notification, input#message{
+  display: none;
+  visibility: hidden;
+}
+
+input#language:checked ~ .main .right .rights  ul.language{
+  display: block;
+  visibility: visible;
+}
+input#notification:checked ~ .main .right .rights  ul.notification{
+  display: block;
+  visibility: visible;
+}
+input#message:checked ~ .main .right .rights  ul.message{
+  display: block;
+  visibility: visible;
+}
+input#userInfo:checked ~ .main .right .rights  ul.userInfo{
+  display: block;
+  visibility: visible;
+}
+
+input#leftMenu:checked ~ .main .left .menu ul li a span {
+  display: none;
+  visibility: hidden;
+}
+input#leftMenu:checked ~ .main .left .user-name {
+  display: none;
+  visibility: hidden;
+}
+
+input#leftMenu:checked ~ .main .left .search{
+  display: none;
+  visibility: hidden;
+}
+
+input#leftMenu:checked ~ .main .left .menu ul li a i{
+  font-size: 26px;
+}
+
+input#leftMenu:checked ~ .main .left .user-img{
+  width: 98%;
+}
+
+input#leftMenu:checked ~ .main .left{
+  width: 53px;
+}
+
+input#leftMenu:checked ~ .main .left hr{
+  margin-top: 8px;
+}
+
+input#leftMenu:checked ~ .main .right {
+  width: calc(100% - 53px);
+  margin-left: 53px;
+}
+input#leftMenu:checked ~ .main .header-top{
+  width: 96.4%;
+}
+
+input#leftMenu:checked ~ .main .right .rights ul{
+  left: 82.2%;
+}
+input#leftMenu:checked ~ .main .right .rights ul.notification{
+  left: 69.3%;
+}
+
+.main .right .rights  ul{
+    position: absolute;
+    width: 231px;
+    background-color: blue;
+    left: 79%;
+    top: 100%;
+    display: none;
+    visibility: hidden;
+    box-shadow: -3px 5px 8px #808080a1;
+}
+.main .right .rights  ul.notification{
+  width: 400px;
+  left: 63.9%;     
+}
+
+.main .right .rights  ul.notification li a h4{
+  font-size: 20px;
+  margin: 3px 0px;
+}
+.main .right .rights  ul.notification li a p{
+  margin: 5px 0px;
+}
+
+.main .right .rights  ul.notification li a i{
+    font-size: 67px;
+    padding: 15px;
+    background-color: gray;
+    border-radius: 12px;
+}
+.main .right .rights  ul li{
+  border-bottom: 1px solid white;
+}
+
+.main .right .rights  ul li:last-child{
+  border-bottom: 0px;
+}
+
+.main .right .rights ul li a{
+  color: white;
+  font-size: 14px;
+  padding: 8px 10px;
+}
+.main .right .rights ul li:hover a{
+  color: black;
+  background-color: white;
+}
+.main .right .rights ul li a i{
+  margin-right: 5px;
+}
+
+.main .right .rights  ul.language img{
+    width: 10%;
+    margin-top: -3px;
+}

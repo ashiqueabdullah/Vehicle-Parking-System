@@ -24,20 +24,15 @@
     </head>
     <body>
 
-        <div class="container-fluid header-top">
-            <div class="row align-items-center justify-content-between">
-                <div class="left">
-                    <h2><span class="vehicle">Vehicle</span> Parking System</h2>
-                </div>
-                <div class="right">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="main d-flex justify-content-start">
+        
+        <input type="checkbox" name="checkbox" id="leftMenu">
+        <input type="checkbox" class="check" id="userInfo" name="check"> 
+        <input type="checkbox" class="check" id="language" name="check"> 
+        <input type="checkbox" class="check" id="notification" name="check"> 
+        <input type="checkbox" class="check" id="message" name="check"> 
+        <div class="main">
             <div class="left">
-                <div class="user-info d-flex align-items-center pt-1">
+                <div class="user-info d-flex align-items-center pt-2">
                     <div class="user-img">
                         <center>
                             <img class="imag" src="img/user.png">
@@ -56,18 +51,112 @@
                 </div>
                 <div class="menu">
                     <ul class="navbar-nav">
-                        <li class="nav-item "><a class="nav-link active" href="#"><i class="fa fa-dashboard"></i> Dashbord</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th-large"></i>  Vehicle Category</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-car"></i>   Vehicle Entry</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-toggle-on"></i>  IN Vehicles</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-toggle-off"></i>  Out Vehicles</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file"></i>  View Reports</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-dollar"></i>   Total Income</a></li>
+                        <li class="nav-item "><a class="nav-link active" href="#"><i class="fa fa-dashboard"></i><span> Dashbord</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th-large"></i><span>  Vehicle Category</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-car"></i><span>   Vehicle Entry</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-toggle-on"></i><span>  IN Vehicles</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-toggle-off"></i><span>  Out Vehicles</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file"></i><span>  View Reports</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-dollar"></i><span>   Total Income</span></a></li>
                     </ul>
                 </div>
             </div>
             <div class="right">
-                as
+                <div class="header-top">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2><span class="vehicle">Vehicle</span> Parking</h2>
+                            <label for="leftMenu" class="pl-2 pt-1">
+                                <i class="fa-solid fa-bars" ></i>
+                            </label>
+                        </div>     
+                        <div class="rights">
+                            <label style="cursor:pointer" for="language"><span style="color:white; margin-right:5px;">Language <i class="fas fa-sort-down" style="background-color:black; color: white;"></i></span></label> 
+                                <ul class="navbar-nav language">
+                                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/bangladesh.png"> Bangla</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/united-kingdom.png"> English</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><img src="img/czech-republic.png"> Chech</a></li>
+                                </ul> 
+                            <label for="notification"><i  class="far fa-bell"></i></label> 
+                                <ul class="navbar-nav notification">
+
+                                    <li class="nav-item"><a href="#" class="nav-link">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <div class="notificationLeft">
+                                           <i class="far fa-bell"></i> 
+                                        </div>
+                                        <div class="notificationRight">
+                                           <h4>Lorem ipsum dolor sit amet.</h4>
+                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deleniti.</p> 
+                                           <small>10 hours ago</small>
+                                        </div>
+                                        </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item"><a href="#" class="nav-link">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <div class="notificationLeft">
+                                           <i class="far fa-bell"></i> 
+                                        </div>
+                                        <div class="notificationRight">
+                                           <h4>Lorem ipsum dolor sit amet.</h4>
+                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deleniti.</p> 
+                                           <small>10 hours ago</small>
+                                        </div>
+                                        </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item"><a href="#" class="nav-link">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <div class="notificationLeft">
+                                           <i class="far fa-bell"></i> 
+                                        </div>
+                                        <div class="notificationRight">
+                                           <h4>Lorem ipsum dolor sit amet.</h4>
+                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deleniti.</p> 
+                                           <small>10 hours ago</small>
+                                        </div>
+                                        </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item"><a href="#" class="nav-link">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <div class="notificationLeft">
+                                           <i class="far fa-bell"></i> 
+                                        </div>
+                                        <div class="notificationRight">
+                                           <h4>Lorem ipsum dolor sit amet.</h4>
+                                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deleniti.</p> 
+                                           <small>10 hours ago</small>
+                                        </div>
+                                        </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item"><a class="nav-link text-center" href="#">All Notification</a></li>
+                        
+                                    
+                                </ul> 
+                                <label for="message"><i  class="far fa-envelope"></i></label> 
+                                <ul class="navbar-nav message">
+                                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-user"></i> Profile</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-key"></i> Chnage Password</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-cogs"></i>Setting</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-power-off"></i>Logout</a></li>
+                                </ul> 
+                            <label for="userInfo"><i  class="fa-solid fa-user"></i></label> 
+                                <ul class="navbar-nav userInfo">
+                                    <li class="nav-item "><a href="#" class="nav-link"><i class="fa fa-user"></i> Profile</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-key"></i> Chnage Password</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-cogs"></i>Setting</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-power-off"></i>Logout</a></li>
+                                </ul> 
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
